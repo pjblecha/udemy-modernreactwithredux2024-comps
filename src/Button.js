@@ -11,7 +11,7 @@ function Button({
     rounded
  }) {
     return (
-        <button>{children}</button>
+        <button className="bg-red-500">{children}</button>
     );
 }
 
