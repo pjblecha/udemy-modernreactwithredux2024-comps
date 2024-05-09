@@ -8,9 +8,10 @@ function Button({
     warning,
     danger,
     outline,
-    rounded
+    rounded,
+    ...rest // this will pass ALL event handlers to the child button object... yay!
  }) {
-    const classes = classnames('px-3', 'py-1.5', 'border', {
+    const classes = classnames('flex', 'items-center', 'px-3', 'py-1.5', 'border', {
         'border-blue-500 bg-blue-500 text-white': primary,
         'border-gray-900 bg-gray-900 text-white': secondary,
         'border-green-500 bg-green-500 text-white': success,
@@ -26,7 +27,7 @@ function Button({
     });
 
     return (
-        <button className={classes}>{children}</button>
+        <button {...rest} className={classes}>{children}</button>
     );
 }
 
