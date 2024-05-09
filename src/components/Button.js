@@ -78,14 +78,14 @@ function Button({
             "border-blue-500 bg-blue-500 text-white": primary,
             "border-gray-900 bg-gray-900 text-white": secondary,
             "border-green-500 bg-green-500 text-white": success,
-            "border-yellow-400 bg-yellow-400 text-gray": warning,
-            "border-red-500 bg-red-500 text-white": danger,
+            "border-yellow-400 bg-yellow-400 text-black": warning,
+            "border-red-500 bg-red-800 text-white": danger,
             "bg-white": outline,
             "text-blue-500": outline && primary,
-            "text-gray-900": outline && secondary,
+            "text-gray-500": outline && secondary,
             "text-green-500": outline && success,
             "text-yellow-400": outline && warning,
-            "text-red-500": outline && danger,
+            "text-red-800": outline && danger,
         }
     );
 
